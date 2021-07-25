@@ -1,5 +1,5 @@
 # next-graphcms-shows
-This is a [Next.js] project utilizing a [GraphCMS] database to display fictional live shows and artists. The project uses [styled-components] for styling the DOM. For more details on the code assessment associated with this project, head over to the public [website](https://codevalapp.github.io/next-graphcms-shows/), where you'll find a listing of [#issues] that need work.
+This is a [Next.js] project utilizing a [GraphCMS] database to display fictional live shows and artists. The project uses [styled-components] for styling the DOM. For more details on the code assessment associated with this project, head over to the public [website](https://codevalapp.github.io/next-graphcms-shows/), where you'll find a listing of [issues](#issues) that need work.
 
 ## Getting Started
 
