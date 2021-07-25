@@ -1,5 +1,5 @@
 # next-graphcms-shows
-This is a [Next.js] project utilizing a [GraphCMS] database to display fictional live shows and artists. The project uses [styled-components] for styling the DOM.
+This is a [Next.js] project utilizing a [GraphCMS] database to display fictional live shows and artists. The project uses [styled-components] for styling the DOM. For more details on the code assessment associated with this project, head over to the public [website](https://codevalapp.github.io/next-graphcms-shows/), where you'll find a listing of [#issues] that need work.
 
 ## Getting Started
 
@@ -18,8 +18,8 @@ You can start editing the page by modifying `pages/index.js`, for instance. The 
 ## Data
 The fictional data for this project is stored in [GraphCMS], a headless GraphQL-based content management system. An up-to-date listing of the important schemas, retrieved live via GraphQL introspection, is visible on the [Schemas](http://localhost:3001/schemas) page.
 
-## Contributing
-Issues are documented in the repository on GitHub. Each issue is tagged with a label such as `bug` or `feature`, along with a tag indicating estimated effort, such as `effort 3` for high effort.
+## Issues
+Issues are documented on the [Issues](https://codevalapp.github.io/next-graphcms-shows/issues/) page of the public website for the project. Each issue includes a type (`Bug` or `Feature`), a numerical rating for effort (using the Fibonacci sequence), a description, and a set of acceptance criteria.
 
 ## Project structure
 The project follows typical [Next.js] structure. Reusable React components reside in the `./components` directory. Next.js [pages](https://nextjs.org/docs/basic-features/pages) are located in the `./pages` directory.
