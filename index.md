@@ -1,3 +1,43 @@
+---
+issues:
+  - id: 1
+    title: Create show list (not grid) view
+    type: Feature
+    effort: 3
+  - id: 2
+    title: Page / 404 page for `shows`
+    type: Bug
+    effort: 2
+  - id: 3
+    title: Add ability to sort shows
+    type: Feature
+    effort: 2
+  - id: 4
+    title: Artist website URLs without http(s) are broken
+    type: Bug
+    effort: 1
+  - id: 5
+    title: Conditionally show artist URLs
+    type: Bug
+    effort: 1
+  - id: 6
+    title: Add `spotifyUrl` to list of Artist links
+    type: Feature
+    effort: 1
+  - id: 7
+    title: Add Artist route
+    type: Feature
+    effort: 3
+  - id: 8
+    title: Shows uniform display on mobile
+    type: Bug
+    effort: 1
+  - id: 9
+    title: Shows page is stupid-wide, not centered
+    type: Bug
+    effort: 1
+---
+
 ## Welcome
 This website describes a code assessment encapsulated in a realistic project. The aim of this website is to convey your assignment, help you get started with the project, and identify the work you can choose from to complete the exercise.
 
@@ -38,7 +78,31 @@ To get started, you're asked to duplicate the project without forking the base r
 There are other means of mirroring a repo without your project being directly connected to the base. See GitHub's documentation on [duplicating a repository].
 
 ## Issues
-Issues are documented on the [Issues](https://codevalapp.github.io/next-graphcms-shows/issues/) page. Each issue includes a type (`Bug` or `Feature`), a numerical rating for effort (1 to 3), a description, and a set of acceptance criteria.
+Below is a collection of issues for the project. Visit the issue page for details, relevant screenshots, and acceptance criteria. Choose 2 or more to work on in your fork.
+
+<div class="header-row">
+  <div>Title</div>
+  <div>Type</div>
+  <div>Effort (Fibonacci)</div>
+</div>
+
+<ul class="issues-list">
+{% for issue in page.issues %}
+    <li>
+      <a href="{{ site.baseurl }}/issues/{{ issue.id }}" class="flex-row">
+        <div>
+          {{ issue.title }}
+        </div>
+        <div>
+          {{ issue.type }}
+        </div>
+        <div>
+          {{ issue.effort }}
+        </div>
+      </a>
+    </li>
+{% endfor %}
+</ul>
 
 [duplicating a repository]: https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/duplicating-a-repository
 [project]: https://github.com/CodevalApp/next-graphcms-shows/
