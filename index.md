@@ -49,7 +49,7 @@ Nine [issues](#issues) within the project are documented on this website. To com
 
 Completing the minimum required work (mirroring the repo, resolving two issues, and sharing the finished work) is estimated to require 1-2 hours. Please complete the assignment within 48 hours of receiving it.
 
-## Getting Started
+## Getting started
 To get started, you're asked to duplicate the project without forking the base repository. This is to ensure that your work is protected from the eyes of others working on this assessment. One way to mirror the repo in your own account (shown below as `your-github-user`):
 
 1. Open a terminal
@@ -104,9 +104,17 @@ Below is a collection of issues for the project. Visit the issue page for detail
 {% endfor %}
 </ul>
 
+## Submitting completed work
+When you've finished your task, you should have a fresh repository (created in Step 3 [above](#getting-started)). That project should be one or more commits ahead of the base repo you mirrored (in Step 4 [above](#getting-started)). You'll need to share that repository with the party who invited you to complete this assessment.
+
+### If your new repo is public
+The simplest way! Just send a URL to your new GitHub repository to the individual/group who requested you complete this assignment.
+
+### If your new repo is private 🔐
+If it's private, the URL to your repo won't be enough. In that case, you'll need to invite the engineers who're assessing your work as collaborators. Obtain those engineers' GitHub usernames, and see GitHub documentation on [inviting collaborators to private repos](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository).
+
 [duplicating a repository]: https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/duplicating-a-repository
 [project]: https://github.com/CodevalApp/next-graphcms-shows/
 [Next.js]: https://nextjs.org/
 [GraphCMS]: https://graphcms.com/
 [styled-components]: https://styled-components.com/
-
