@@ -1,0 +1,83 @@
+---
+---
+
+@import "jekyll-theme-slate";
+$border-color: #bfbfbf;
+$hover-color: #0090ff;
+ul.issues-list {
+  border: 1px solid $border-color;
+  border-radius: 10px;
+  list-style: none;
+  padding: 0;
+
+  li {
+    border-bottom: 1px solid $border-color;
+    transition: background 300ms ease;
+
+    &:hover {
+      background: $hover-color;
+    }
+
+    &:first-child {
+      border-radius: 9px 9px 0 0;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+      border-radius: 0 0 9px 9px;
+    }
+  }
+}
+
+a.flex-row {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+
+  > div {
+    flex: 0 0 60px;
+    padding: 0 10px;
+    border-right: 1px solid $border-color;
+
+    &:first-child {
+      padding: 0;
+      flex: 1 1 100%;
+    }
+
+    &:last-child {
+      flex: 0 0 125px;
+      border-right: 0;
+    }
+  }
+}
+
+.header-row {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+
+  > div {
+    flex: 0 0 60px;
+    padding: 0 10px;
+    border-right: 1px solid transparent;
+
+    &:first-child {
+      padding: 0;
+      flex: 1 1 100%;
+    }
+
+    &:last-child {
+      flex: 0 0 125px;
+      border-right: 0;
+    }
+  }
+}
+
+div.language-plaintext {
+  > div.highlight,
+  div.highlight > pre.highlight {
+    background: inherit;
+  }
+}
