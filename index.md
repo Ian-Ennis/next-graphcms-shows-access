@@ -47,7 +47,7 @@ The [project] is built with [Next.js] and utilizes a [GraphCMS] database to disp
 ## The assignment
 Nine [issues](#issues) within the project are documented on this website. To complete this code assessment, you're asked to mirror the base project (details in [Getting Started](#getting-started)), resolve at least two of the [issues](#issues) documented here, and then provide access to your mirrored (not forked or cloned) repo containing your work.
 
-Completing the minimum required work (mirroring the repo, resolving two issues, and sharing the finished work) is estimated to require 1-2 hours. Please complete the assignment within 48 hours of receiving it.
+Completing the _minimum_ required work (mirroring the repo, resolving two issues, and sharing the finished work) is estimated to require 1-2 hours. You are, of course, welcome to complete more than two issues should time permit. Please complete the assignment within 48 hours of receiving it.
 
 ## Getting started
 To get started, you're asked to duplicate the project without forking the base repository. This is to ensure that your work is protected from the eyes of others working on this assessment. One way to mirror the repo in your own account (shown below as `your-github-user`):
@@ -105,7 +105,7 @@ Below is a collection of issues for the project. Visit the issue page for detail
 </ul>
 
 ## Submitting completed work
-When you've finished your task, you should have a fresh repository (created in Step 3 [above](#getting-started)). That project should be one or more commits ahead of the base repo you mirrored (in Step 4 [above](#getting-started)). You'll need to share that repository with the party who invited you to complete this assessment.
+When you've finished your task, you should have a fresh repository (created in Step 3 [above](#getting-started)). Having resolved two or more issues, that project should be one or more commits ahead of the base repo you mirrored (in Step 4 [above](#getting-started)). You'll need to share that repository with the party who invited you to complete this assessment.
 
 ### If your new repo is public
 The simplest way! Just send a URL to your new GitHub repository to the individual/group who requested you complete this assignment.
