@@ -105,7 +105,7 @@ Below is a collection of issues for the project. Visit the issue page for detail
 </ul>
 
 ## Submitting completed work
-When you've finished your task, you should have a fresh repository (created in Step 3 [above](#getting-started)). Having resolved two or more issues, that project should be one or more commits ahead of the base repo you mirrored (in Step 4 [above](#getting-started)). You'll need to share that repository with the party who invited you to complete this assessment.
+When you've finished your task, you should have a fresh repository (created in Step 3 [above](#getting-started)). Having resolved two or more issues, that project should be one or more commits ahead of the base repo you mirrored (in Step 4 [above](#getting-started)). You'll need to share that repository with the party who invited you to complete this assessment. Please also mention to them the issues you addressed in your work.
 
 ### If your new repo is public
 The simplest way! Just send a URL to your new GitHub repository to the individual/group who requested you complete this assignment.
