@@ -39,15 +39,15 @@ issues:
 ---
 
 ## Welcome
-This website describes a code assessment encapsulated in a realistic project. The aim of this website is to convey your assignment, help you get started with the project, and identify the work you can choose from to complete the exercise.
+This website describes a code assessment encapsulated in a realistic project. The aim of this website is to convey your assignment, identify the work you can choose from to complete the exercise, and help you get started with the project.
 
 ### next-graphcms-shows
 The [project] is built with [Next.js] and utilizes a [GraphCMS] database to display fictional live music shows and artists. The project uses [styled-components] for styling the DOM. And it has a handful of [bugs and missing features](#issues), quite like real projects you'd find in the wild. Unlike most coding asssessments that test your ability to solve obtuse brain-teasers within a time limit, the aim of this assessment is to evaluate your approach to, prioritization of, and solving of these realistic issues in the context of a production application.
 
 ## The assignment
-Nine [issues](#issues) within the project are documented on this website. To complete this code assessment, you're asked to mirror the base project (details in [Getting Started](#getting-started)), resolve at least two of the [issues](#issues) documented here, and then provide access to your mirrored (not forked or cloned) repo containing your work.
+Nine [issues](#issues) within the project are documented on this website. In the live coding exercise, you'll be asked to work on one or more of these tasks as time allows.
 
-Completing the _minimum_ required work (mirroring the repo, resolving two issues, and sharing the finished work) is estimated to require 1-2 hours. You are, of course, welcome to complete more than two issues should time permit. Please complete the assignment within 48 hours of receiving it.
+Prior to the scheduled live coding session, we suggest that you mirror the base project (details in [Getting Started](#getting-started)) and review the [issues](#issues) documented here.
 
 ## Getting started
 To get started, you're asked to duplicate the project without forking the base repository. This is to ensure that your work is protected from the eyes of others working on this assessment. One way to mirror the repo in your own account (shown below as `your-github-user`):
@@ -78,7 +78,7 @@ To get started, you're asked to duplicate the project without forking the base r
 There are other means of mirroring a repo without your project being directly connected to the base. See GitHub's documentation on [duplicating a repository].
 
 ## Issues
-Below is a collection of issues for the project. Visit the issue pages for details, relevant screenshots, and acceptance criteria. Choose 2 or more to work on in your fork.
+Below is a collection of issues for the project. Visit the issue pages for details, relevant screenshots, and acceptance criteria.
 
 <div class="header-row">
   <div>Title</div>
@@ -105,7 +105,7 @@ Below is a collection of issues for the project. Visit the issue pages for detai
 </ul>
 
 ## Submitting completed work
-When you've finished your task, you should have a fresh repository (created in Step 3 [above](#getting-started)). Having resolved two or more issues, that project should be one or more commits ahead of the base repo you mirrored (in Step 4 [above](#getting-started)). You'll need to share that repository with the party who invited you to complete this assessment. Please also mention to them the issues you addressed in your work.
+When you've finished the live coding exercise, you should have a fresh repository (created in Step 3 [above](#getting-started)) with one or more resolved issues. That project should be one or more commits ahead of the base repo you mirrored (in Step 4 [above](#getting-started)). You'll need to share that repository with the party who invited you to complete this assessment.
 
 ### If your new repo is public
 The simplest way! Just send a URL to your new GitHub repository to the individual/group who requested you complete this assignment.
