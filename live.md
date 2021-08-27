@@ -88,7 +88,6 @@ Some time will be reserved for final questions and comments.
 Below is a collection of issues for the project. Visit the issue pages for details, relevant screenshots, and acceptance criteria.
 
 <div class="header-row">
-  <div>ID</div>
   <div>Title</div>
   <div>Type</div>
   <div>Effort (Fibonacci)</div>
@@ -98,9 +97,6 @@ Below is a collection of issues for the project. Visit the issue pages for detai
 {% for issue in page.issues %}
     <li>
       <a href="{{ site.baseurl }}/issues/{{ issue.id }}" class="flex-row">
-        <div>
-          {{ issue.id }}
-        </div>
         <div>
           {{ issue.title }}
         </div>
