@@ -50,7 +50,7 @@ Nine [issues](#issues) within the project are documented on this website. In the
 Prior to the scheduled live coding session, we suggest that you mirror the base project (details in [Getting Started](#getting-started)) and review the [issues](#issues) documented here.
 
 ## Getting started
-To get started, you're asked to duplicate the project without forking the base repository. This is to ensure that your work is protected from the eyes of others working on this assessment. One way to mirror the repo in your own account (shown below as `your-github-user`):
+To get started, you're asked to duplicate the project without forking the base repository. This is to ensure that your work is protected from the eyes of others working on this assessment. Please have this mirrored repository ready before the scheduled live coding session. One way to mirror the repo in your own account (shown below as `your-github-user`):
 
 1. Open a terminal
 2. Create a temporary, bare clone of the base repository:
@@ -77,10 +77,18 @@ To get started, you're asked to duplicate the project without forking the base r
 
 There are other means of mirroring a repo without your project being directly connected to the base. See GitHub's documentation on [duplicating a repository].
 
+## Live coding session
+Prior to the live coding session, please mirror the base repository, as documented in [Getting Started](#getting-started). We also recommend reviewing the issues below. You may familiarize yourself with the codebase, but we ask that you refrain from beginning any work before the session.
+
+When the session begins, you'll be asked to configure the project, assigned a task, and given time to complete the task. The party who invited you to complete this assessment will be available to answer questions and, if needed, hints. If time allows, you're free to complete more than one task. Commit and push your work as you would under real-world conditions. When the live session is complete, please share your work with the assessor.
+
+Some time will be reserved for final questions and comments.
+
 ## Issues
 Below is a collection of issues for the project. Visit the issue pages for details, relevant screenshots, and acceptance criteria.
 
 <div class="header-row">
+  <div>ID</div>
   <div>Title</div>
   <div>Type</div>
   <div>Effort (Fibonacci)</div>
@@ -90,6 +98,9 @@ Below is a collection of issues for the project. Visit the issue pages for detai
 {% for issue in page.issues %}
     <li>
       <a href="{{ site.baseurl }}/issues/{{ issue.id }}" class="flex-row">
+        <div>
+          {{ issue.id }}
+        </div>
         <div>
           {{ issue.title }}
         </div>
