@@ -12,6 +12,7 @@ const CardStyle = css`
   border: 1px solid var(--gallery-grey);
   border-radius: 10px;
   transition: 150ms ease;
+  width: 90%;
 
   :hover,
   :focus,
