@@ -32,6 +32,7 @@ const CardStyle = css`
   }
 `
 
+// Bug fix for: Shows page is stupid-wid, not centered
 const StyledGrid = styled.div`
   display: flex;
   align-items: center;
@@ -41,8 +42,9 @@ const StyledGrid = styled.div`
   width: 100%;
 
   @media (min-width: 600px) {
-    width: auto;
     flex-direction: row;
+    justify-content: center;
+    width: 70%;
   }
 `
 
