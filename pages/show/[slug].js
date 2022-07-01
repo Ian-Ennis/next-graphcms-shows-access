@@ -40,7 +40,11 @@ const Portrait = ({ images = [] }) => {
 }
 
 export default function Shows({ show }) {
-  const webURL = show.artists[0].webUrl;
+  let webURL = show.artists[0].webUrl;
+
+  if (!webURL.includes('https://')) {
+    webURL = `https://${show.artists[0].webUrl}`
+  }
   const facebookURL = show.artists[0].facebookUrl;
   const instagramURL = show.artists[0].instagramUrl;
   const youTubeURL = show.artists[0].youTubeUrl;
@@ -63,10 +67,10 @@ export default function Shows({ show }) {
           <Portrait images={artist.images} />
 
           <FlexyRow justify="flex-start">
-            {webURL ? <a href={artist.webUrl} target="_blank">Website</a> : null}
-            {facebookURL ? <a href={artist.facebookUrl} target="_blank">Facebook</a> : null}
-            {instagramURL ? <a href={artist.instagramUrl} target="_blank">Instagram</a> : null}
-            {youTubeURL ? <a href={artist.youTubeUrl} target="_blank">YouTube</a> : null}
+            {webURL ? <a href={webURL} onClick={console.log(webURL)}target="_blank">Website</a> : null}
+            {facebookURL ? <a href={facebookURL} target="_blank">Facebook</a> : null}
+            {instagramURL ? <a href={instagramURL} target="_blank">Instagram</a> : null}
+            {youTubeURL ? <a href={youTubeURL} target="_blank">YouTube</a> : null}
           </FlexyRow>
 
           <Markdown source={artist.bio} />
