@@ -40,6 +40,7 @@ const Portrait = ({ images = [] }) => {
 }
 
 export default function Shows({ show }) {
+  console.log("Show:", show)
   let webURL = show.artists[0].webUrl;
 
   if (!webURL.includes('https://')) {
@@ -48,6 +49,7 @@ export default function Shows({ show }) {
   const facebookURL = show.artists[0].facebookUrl;
   const instagramURL = show.artists[0].instagramUrl;
   const youTubeURL = show.artists[0].youTubeUrl;
+  const spotifyURL = show.artists[0].spotifyUrl;
   
   return (
     <Layout title={`${show.title} / next-graphcms-shows`} maxWidth="900px" padding="0 2em">
@@ -71,6 +73,7 @@ export default function Shows({ show }) {
             {facebookURL ? <a href={facebookURL} target="_blank">Facebook</a> : null}
             {instagramURL ? <a href={instagramURL} target="_blank">Instagram</a> : null}
             {youTubeURL ? <a href={youTubeURL} target="_blank">YouTube</a> : null}
+            {spotifyURL ? <a href={spotifyURL} target="_blank">Spotify</a> : null}
           </FlexyRow>
 
           <Markdown source={artist.bio} />
