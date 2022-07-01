@@ -40,7 +40,6 @@ const Portrait = ({ images = [] }) => {
 }
 
 export default function Shows({ show }) {
-  console.log("Show:", show)
   let webURL = show.artists[0].webUrl;
 
   if (!webURL.includes('https://')) {
@@ -86,6 +85,12 @@ export default function Shows({ show }) {
 export async function getServerSideProps({ params }) {
   const { slug } = params
   const show = (await getShowBySlug(slug))
+
+  if (!show) {
+    return {
+      notFound: true,
+    }
+  }
 
   return {
     props: { show },
