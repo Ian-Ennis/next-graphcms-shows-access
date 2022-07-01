@@ -2,6 +2,8 @@ import Link from 'next/link'
 import styled, { css } from 'styled-components'
 import { truncateText } from '@l/utils'
 
+// Fixed bug: Shows uniform display on mobile
+
 const CardStyle = css`
   margin: 1rem;
   flex-basis: 45%;
@@ -33,7 +35,8 @@ const CardStyle = css`
   }
 `
 
-// Bug fix for: Shows page is stupid-wid, not centered
+// Fixed bug: Shows page is stupid-wide, not centered
+
 const StyledGrid = styled.div`
   display: flex;
   align-items: center;

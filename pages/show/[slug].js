@@ -39,15 +39,23 @@ const Portrait = ({ images = [] }) => {
   return null
 }
 
+
 export default function Shows({ show }) {
   let webURL = show.artists[0].webUrl;
+
+  // Fixed bug: Artist website URL's without http(s) are broken
 
   if (!webURL.includes('https://')) {
     webURL = `https://${show.artists[0].webUrl}`
   }
+
+  // Fixed bug: Conditionally show artist URLs
+
   const facebookURL = show.artists[0].facebookUrl;
   const instagramURL = show.artists[0].instagramUrl;
   const youTubeURL = show.artists[0].youTubeUrl;
+
+    // Fixed bug: Add 'spotifyUrl' to list of Artist links (see graphcms.js)
   const spotifyURL = show.artists[0].spotifyUrl;
   
   return (
@@ -85,6 +93,8 @@ export default function Shows({ show }) {
 export async function getServerSideProps({ params }) {
   const { slug } = params
   const show = (await getShowBySlug(slug))
+
+  //  Fixed bug: Page / 404 page for shows (see 404.js)
 
   if (!show) {
     return {
