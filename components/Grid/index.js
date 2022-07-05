@@ -3,7 +3,6 @@ import styled, { css } from 'styled-components'
 import { truncateText } from '@l/utils'
 
 // Fixed bug: Shows uniform display on mobile
-
 const CardStyle = css`
   margin: 1rem;
   flex-basis: 45%;

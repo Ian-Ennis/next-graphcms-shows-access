@@ -40,28 +40,21 @@ const Portrait = ({ images = [] }) => {
 }
 
 
-export default function Shows({ show }) {
-
-  console.log("show:", show)
-  
-  let webURL = show.artists[0].webUrl;
-
-  // Fixed bug: Artist website URL's without http(s) are broken
-  if (!webURL.includes('https://')) {
-    webURL = `https://${show.artists[0].webUrl}`
-  }
-
-  // Fixed bug: Conditionally show artist URLs
-  const facebookURL = show.artists[0].facebookUrl;
-  const instagramURL = show.artists[0].instagramUrl;
-  const youTubeURL = show.artists[0].youTubeUrl;
-
-  // Fixed bug: Add 'spotifyUrl' to list of Artist links (see graphcms.js)
-  const spotifyURL = show.artists[0].spotifyUrl;
-  
+export default function Shows({ show }) {    
   return (
     <Layout title={`${show.title} / next-graphcms-shows`} maxWidth="900px" padding="0 2em">
       <Title>{show.title}</Title>
+
+      {show.artists.map(artist => (
+        <div key={artist.id}>
+          <ArtistName><a href={`/artist/${artist.slug}`}>{artist.fullName}</a></ArtistName>
+
+          <a href={`/artist/${artist.slug}`}>
+            <Portrait images={artist.images} />
+          </a>
+          &nbsp;
+        </div>
+      ))}
 
       <FlexyRow>
         <span>Price: {formatUSD(show.ticketPrice)}</span>
@@ -70,23 +63,6 @@ export default function Shows({ show }) {
 
       <Markdown source={show.description} />
 
-      {show.artists.map(artist => (
-        <div key={artist.id}>
-          <ArtistName>{artist.fullName}</ArtistName>
-
-          <Portrait images={artist.images} />
-
-          <FlexyRow justify="flex-start">
-            {webURL ? <a href={webURL} onClick={console.log(webURL)}target="_blank">Website</a> : null}
-            {facebookURL ? <a href={facebookURL} target="_blank">Facebook</a> : null}
-            {instagramURL ? <a href={instagramURL} target="_blank">Instagram</a> : null}
-            {youTubeURL ? <a href={youTubeURL} target="_blank">YouTube</a> : null}
-            {spotifyURL ? <a href={spotifyURL} target="_blank">Spotify</a> : null}
-          </FlexyRow>
-
-          <Markdown source={artist.bio} />
-        </div>
-      ))}
     </Layout>
   )
 }
@@ -96,7 +72,6 @@ export async function getServerSideProps({ params }) {
   const show = (await getShowBySlug(slug))
 
   //  Fixed bug: Page / 404 page for shows (see 404.js)
-
   if (!show) {
     return {
       notFound: true,

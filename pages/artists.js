@@ -4,9 +4,6 @@ import { Title } from '@c/Title'
 import { getAllArtists }from "@l/graphcms";
 
 export default function Artists({ data }) {
-
-    console.log(data)
-
   return (
     <Layout title="next-graphcms-artists / Artists">
       <Title>Artists</Title>
