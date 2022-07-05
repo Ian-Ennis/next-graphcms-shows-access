@@ -58,7 +58,7 @@ export default function Artists({ artist }) {
         &nbsp;
 
         <FlexyRow justify="flex-start">
-          {webURL ? <a href={webURL} onClick={console.log(webURL)}target="_blank">Website</a> : null}
+          {webURL ? <a href={webURL} target="_blank">Website</a> : null}
           {facebookURL ? <a href={facebookURL} target="_blank">Facebook</a> : null}
           {instagramURL ? <a href={instagramURL} target="_blank">Instagram</a> : null}
           {youTubeURL ? <a href={youTubeURL} target="_blank">YouTube</a> : null}
