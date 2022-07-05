@@ -53,10 +53,7 @@ export default function Shows({ showsEarlier, showsLater, showsAlphabetized, sho
         <button onClick={(e) => {e.preventDefault(); setGridOn(true)}}>Grid view</button>
         <button onClick={(e) => {e.preventDefault(); setGridOn(false)}}>List view</button>
       </ButtonContainer>
-      <select
-        name="showsDropdown"
-        onChange={(e) => sortShows(e, e.target.value)}
-      >
+      <select name="showsDropdown" onChange={(e) => sortShows(e, e.target.value)}>
         <option value="">Sort shows by..</option>
         <option value="titleAlpha">Title (Alphabetical)</option>
         <option value="titleReverseAlpha">Title (Reverse Alphabetical)</option>
