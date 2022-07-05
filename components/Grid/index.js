@@ -35,7 +35,6 @@ const CardStyle = css`
 `
 
 // Fixed bug: Shows page is stupid-wide, not centered
-
 const StyledGrid = styled.div`
   display: flex;
   align-items: center;
