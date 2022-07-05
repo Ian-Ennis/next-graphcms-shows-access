@@ -15,6 +15,9 @@ export default function Home() {
         <Card href="/readme" header="README">
           <p>Check the README for details on how to work on this project.</p>
         </Card>
+        <Card href="/artists" header="Artists">
+          <p>A listing of artists pulled from the mock data GraphQL store.</p>
+        </Card>
         <Card href="/shows" header="Shows">
           <p>A listing of shows pulled from the mock data GraphQL store.</p>
         </Card>

@@ -19,8 +19,6 @@ export default function Shows({ showsEarlier, showsLater, showsAlphabetized, sho
 
   const [showSortOrder, setShowSortOrder] = useState(showsEarlier)
 
-  console.log("showSortOrder:", showSortOrder)
-
   function sortShows(e, target) {
     e.preventDefault();
 
@@ -37,6 +35,8 @@ export default function Shows({ showsEarlier, showsLater, showsAlphabetized, sho
       setShowSortOrder(showsLater)
     }
   }
+
+  console.log("shows:", showSortOrder)
 
   return (
     <Layout title="next-graphcms-shows / Shows">
