@@ -25,6 +25,11 @@ export default function Shows({ showsEarlier, showsLater, showsAlphabetized, sho
       to the UI for user sort order selection, making use of component state
       to store and render the sorted server data. I thought this looked a bit 
       better on the UI over <button /> elements; less clutter, and a bit more intuitive. 
+
+     Added create show list (not grid) view feature. I used buttons for this, considering 
+      there are only two selections, and already have dropdown for sorting. Sorting works
+      for this list feature as well. See "gridOn" component state below, with conditional 
+      ternary operator in jsx return statement; and @c/List/index.js. 
   */
   const [showSortOrder, setShowSortOrder] = useState(showsEarlier);
   const [gridOn, setGridOn] = useState(true)

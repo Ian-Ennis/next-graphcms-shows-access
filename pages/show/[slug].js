@@ -39,7 +39,6 @@ const Portrait = ({ images = [] }) => {
   return null
 }
 
-
 export default function Shows({ show }) {    
   return (
     <Layout title={`${show.title} / next-graphcms-shows`} maxWidth="900px" padding="0 2em">
